@@ -1,0 +1,57 @@
+databaseChangeLog:
+- changeSet:
+    id: schema-0.0.2
+    author: showroom team
+    changes:
+    - createTable:
+        tableName: cars
+        columns:
+        - column:
+            name: car_id
+            type: bigint
+            constraints:
+              nullable: false
+        - column:
+            name: car_name
+            type: varchar(255)
+        - column:
+            name: car_brand
+            type: varchar(255)
+        - column:
+            name: car_model
+            type: bigint
+        - column:
+            name: mileage
+            type: bigint
+        - column:
+            name: registration_number
+            type: varchar(255)
+    - addPrimaryKey:
+        tableName: cars
+        columnNames: car_id
+        constraintName: cars_pk
+- changeSet:
+    id: data-0.0.2
+    author: showroom team
+    changes:
+    - insert:
+        tableName: cars
+        columns:
+        - column:
+            name: car_id
+            value: '123'
+        - column:
+            name: car_name
+            value: Civic
+        - column:
+            name: car_brand
+            value: Honda
+        - column:
+            name: car_model
+            value: '2004'
+        - column:
+            name: mileage
+            value: '10000'
+        - column:
+            name: registration_number
+            value: LZK-179
