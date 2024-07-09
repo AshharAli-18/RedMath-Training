@@ -1,0 +1,57 @@
+databaseChangeLog:
+- changeSet:
+    id: schema-0.0.2
+    author: SnookerClub Staff
+    changes:
+    - createTable:
+        tableName: frames
+        columns:
+        - column:
+            name: frame_id
+            type: int
+            constraints:
+              nullable: false
+        - column:
+            name: player1
+            type: varchar(255)
+        - column:
+            name: player2
+            type: varchar(255)
+        - column:
+            name: winner
+            type: varchar(255)
+        - column:
+            name: reported_By
+            type: varchar(255)
+        - column:
+            name: reported_On
+            type: DATETIME
+    - addPrimaryKey:
+        tableName: frames
+        columnNames: frame_id
+        constraintName: frames_pk
+- changeSet:
+    id: data-0.0.2
+    author: SnookerClub Staff
+    changes:
+    - insert:
+        tableName: frames
+        columns:
+        - column:
+            name: frame_id
+            value: '1'
+        - column:
+            name: player1
+            value: Ali
+        - column:
+            name: player2
+            value: Hamza
+        - column:
+            name: winner
+            value: Ali
+        - column:
+            name: reported_By
+            value: Ahmed
+        - column:
+            name: reported_On
+            value: '2000-01-01T12:00:00'
