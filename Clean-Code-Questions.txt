@@ -1,0 +1,11 @@
+1. Which of the following is the best name for a function according to the naming         convention?
+a. processData
+b. dataProcessor
+c. dataProcessed
+d. All of the above
+
+2. Which of the following is a valid name for a variable?
+a. d
+b. daysElapsedInMonth
+c. Days_elapsed
+d. All of the above 
