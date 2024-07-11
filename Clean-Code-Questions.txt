@@ -1,3 +1,5 @@
+CHAPTER 2:
+
 1. Which of the following is the best name for a function according to the naming         convention?
 a. processData
 b. dataProcessor
@@ -9,3 +11,16 @@ a. d
 b. daysElapsedInMonth
 c. Days_elapsed
 d. All of the above 
+
+CHAPTER 3:
+
+1. What is a side effect and why we should avoid it in a function?
+
+Chapter 4:
+
+1.What are the risks associated with the TODO comments and how they can be mitigated?
+
+Chapter 5:
+
+1. Differentiate between vertical formatting and horizontal formatting.
+
